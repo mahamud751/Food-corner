@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .navbar-light .navbar-nav .nav-link {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+</style>
+
+<body>
+    <header
+        style="background-image: url(img/home-slide-3-1920x800.jpg);height: 100vh; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;background-position: center; width: 100%;">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="img/photo_2021-07-22_09-36-23.jpg"
+                            alt="" style="width: 30px;height: 30px; border-radius: 50%;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="background: white;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-center p-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Contract Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" id="input-search">
+                            <button class="btn btn-outline-success" type="submit" id="button-search">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="search-item">
+                <div id="meal">
+                    <div class="meal-item" data-id="${meal.idMeal}">
+                        <!-- <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card text-center">
+                                    <div class="meal-img">
+                                        <img src="${meal.strMealThumb}" alt="food">
+                                    </div>
+                                    <div class="meal-name">
+                                        <h3>${meal.strMeal}</h3>
+                                        <a href="#" class="recipe-btn">Get Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="food">
+                    <button class="btn btn-primary" id="close-btn"><i class="fas fa-times"></i></button>
+                    <div class="food-details text-center">
+                        <!-- <h1 class="title">Food Name</h1>
+                    <h3>Category</h4>
+                        <p>Instructions</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fugiat! Eligendi facere
+                            illo qui quibusdam eveniet repudiandae magnam alias, aut, veniam ipsum ex at accusantium hic
+                            temporibus saepe ducimus distinctio!</p>
+                        <div class="food-details-img">
+                            <img src="img/1548772327.jpg" alt="">
+                        </div> -->
+
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/brooke-lark-M4E7X3z80PQ-unsplash (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thai Green Curry</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beef Dumpling Stew</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/pexels-ella-olsson-1640777.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Big Mac</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Category -->
+        <section id="about-us">
+            <div class="row mt-4">
+                <div class="col-lg-4"> </div>
+
+                <div class="col-lg-4">
+
+                    <div class="about-us-content text-center">
+                        <img src="img/jason-briscoe-n4ymhyyFY7A-unsplash.jpg" alt="">
+                        <p class="small"> Excellent food. Menu is extensive and seasonal to a particularly high
+                            standard. Definitely fine dining. It can be expensive but worth it and they do different
+                            deals on different nights so it’s worth checking them out before you book. Highly
+                            recommended.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+
+
+            </div>
+        </section>
+
+        <!-- about-part end -->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/aleks-dorohovich-HYpXP6Zk1dw-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index1.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index2.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/qtuuys1511387068.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index3.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/uyqrrv1511553350.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index4.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/Chicken.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index5.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index6.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/utxqpt1511639216.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index7.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <div class="card text-center p-2 text-white text-white">
+                            <div class="card-img img-fluid">
+                                <img src="img/1548772327.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="title">Combo Special</h4>
+                                <h4>ITEM-1</h4>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="Buy mt-5">
+                                <button class="btn btn-dark"><a class="text-white" href="index8.html"
+                                        style="text-decoration: none;">ORDER NOW</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- card-item end -->
+        <section>
+            <div class="container-fluid blockquote mt-5 d-flex align-items-center">
+                <div class="row">
+                    <div class="col-lg-6 text-center ">
+                        <blockquote>
+                            I've been eating their business lunches for the past 7 years. Not even once have I had any
+                            unpleasant experience. And the dishes always taste fresh and good! <br>
+                            <cite>-Amanda</cite>
+                            <div class="blockqoute-img">
+                                <img class="img-fluid" src="img/photo-1552256469-acf9fd4feb50.jpg" alt="">
+                            </div>
+                    </div>
+                    </blockquote>
+
+                    <div class="col-lg-6 text-center">
+                        <blockquote>
+                            I've been eating their business lunches for the past 7 years. Not even once have I had any
+                            unpleasant experience. And the dishes always taste fresh and good! <br>
+                            <cite>-Amanda</cite>
+                            <div class="blockqoute-img">
+                                <img class="img-fluid" src="img/pexels-pixabay-220453.jpg" alt="">
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark d-flex justify-content-center align-items-center">
+        <p class="text-center text-white m-0">© All rights reserved by D'cafe Restaurant</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

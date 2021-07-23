@@ -21,66 +21,73 @@
     <div class="container">
         <div class="food-details d-flex justify-content-center align-items-center">
             <div class="row">
-                <div class="col-lg-7 text-center d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
                     <div class="food-details-img">
                         <img src="img/aleks-dorohovich-HYpXP6Zk1dw-unsplash.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-5 shadow">
-                    <div class="discription text-center">
-                        <h1>Food Name</h1>
-                        <h3>Category</h3>
-                        <p>Instructions</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fugiat! Eligendi facere
-                            illo qui quibusdam eveniet repudiandae magnam alias, aut, veniam ipsum ex at accusantium hic
-                            temporibus saepe ducimus distinctio!</p>
-                        <h1>$ <span></span>30.00</span></h1>
-                    </div>
+                <div class="col-lg-6 shadow">
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <div class="discription text-center">
+                                <h1>Food Name</h1>
+                                <h3>Category</h3>
+                                <p>Instructions</p>
+                                <h1>$ <span></span>30.00</span></h1>
+                                <p class="w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Culpa delectus
+                                    molestias
+                                    eaque consequatur nihil quos corporis architecto dolor recusandae quia? Distinctio
+                                    obcaecati dolores ipsa, praesentium nulla at repellat sit perspiciatis!</p>
+                            </div>
+                            <div class="page" style="height: 100px;">
+                                <ul class="pagination d-flex justify-content-center align-items-center">
+                                    <li class="page-item"><input type="text" name="" id="input" value="0"></li>
+                                    <div class="page">
+                                        <li class="page-item"><button class="page-link"
+                                                onclick="increment('input','add-input')"><i
+                                                    class="fas fa-caret-up"></i></button></li>
+                                        <li class="page-item"><button class="page-link"
+                                                onclick="decrement('input','add-input')"><i
+                                                    class="fas fa-caret-down"></i></button></li>
+                                    </div>
 
-                    <div class="page" style="height: 100px;">
-                        <ul class="pagination d-flex justify-content-center align-items-center">
-                            <li class="page-item"><input type="text" name="" id="input" value="0"></li>
-                            <div class="page">
-                                <li class="page-item"><button class="page-link"
-                                        onclick="increment('input','add-input')"><i
-                                            class="fas fa-caret-up"></i></button></li>
-                                <li class="page-item"><button class="page-link"
-                                        onclick="decrement('input','add-input')"><i
-                                            class="fas fa-caret-down"></i></button></li>
+                                </ul>
                             </div>
 
-                        </ul>
-                    </div>
 
+                            <div class="bill shadow w-75 mx-auto">
+                                <div class="d-flex justify-content-between">
+                                    <p>Bill</p>
+                                    <p>$<span id="bill">0.00</span></p>
+                                </div>
+                                <div class="side d-flex justify-content-between">
+                                    <p>Vat</p>
+                                    <p>$<span id="vat">5.00</span></p>
+                                </div>
 
-                    <div class="bill shadow">
-                        <div class="side d-flex justify-content-between">
-                            <p>Bill</p>
-                            <p>$<span id="bill">0.00</span></p>
-                        </div>
-                        <div class="side d-flex justify-content-between">
-                            <p>Vat</p>
-                            <p>$<span id="vat">5.00</span></p>
-                        </div>
-
-                        <div class="total">
-                            <div class="side d-flex justify-content-between">
-                                <p>Total Bill</p>
-                                <p>$<span id="totalBill">0.00</span></p>
+                                <div class="total">
+                                    <div class="side d-flex justify-content-between">
+                                        <p>Total Bill</p>
+                                        <p>$<span id="totalBill">0.00</span></p>
+                                    </div>
+                                </div>
+                                <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample"
+                                    aria-expanded="false" aria-controls="collapaseExample">Discount Code
+                                    <p><i class="fas fa-chevron-down"></i></p>
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <input type="text" name="" id="dis" placeholder="Enter your discount code">
+                                    <small id="error">Good Luck</small>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary w-100 " onclick="discount()">Apply</button>
                             </div>
                         </div>
-                        <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample"
-                            aria-expanded="false" aria-controls="collapaseExample">Discount Code
-                            <p><i class="fas fa-chevron-down"></i></p>
-                        </a>
-                        <div class="collapse" id="collapseExample">
-                            <input type="text" name="" id="dis" placeholder="Enter your discount code">
-                            <small id="error">Good Luck</small>
-                        </div>
-                        <br>
-                        <button class="btn btn-primary w-100 " onclick="discount()">Apply</button>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>

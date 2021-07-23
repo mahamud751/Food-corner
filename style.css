@@ -3,7 +3,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .nav-item{
-    padding: 20px;
+    padding: 25px;
+}
+.nav-search{
+    margin-top: -8px;
 }
 .btn-outline-success{
     color: white;
@@ -71,7 +74,7 @@ body{
 .showFood{
     display: block;
 }
-..meal-img img{
+.meal-img img{
     width: 300px;
     height: 300px;
 }
@@ -83,9 +86,13 @@ body{
     height: 400px;
 }
 #input{
-    height: 60px;
+    height: 20px;
     width: 150px;
 }
+#input-search{
+    width: 160px;
+}
+
 .footer{
     height: 100px;
 }
